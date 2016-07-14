@@ -3,3 +3,7 @@ extends layout
 block content
   h1= title
   p Hello, welcome to #{title}
+  p articles[0].title
+  each article in articles
+    li= article.title
+    
