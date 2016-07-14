@@ -2,10 +2,7 @@ var express = require('express'),
   router = express.Router(),
   Article = require('../models/article');
   
-var request = require('request-promise');
 var feed = require('feed-read');
-var bluebird = require('bluebird');
-
 
 module.exports = function (app) {
   app.use('/', router);
